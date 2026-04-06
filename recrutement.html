@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Rejoignez Groupe Akel Services ! Découvrez nos offres d'emploi à pourvoir : Développeur Web, Commercial, RH, Comptable. Postulez en ligne avec CV.">
+    <meta name="keywords"
+        content="emploi, recrutement, offres d'emploi, Togo, Akel Services, Lomé, développeur, commercial">
+    <meta name="author" content="Groupe Akel Services">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Recrutement - Groupe Akel Services">
+    <meta property="og:description" content="Offres d'emploi et candidatures spontanées">
+    <meta property="og:image" content="assets/images/logo.webp">
+    <meta property="og:url" content="https://akelservices.tg/recrutement.html">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org Jobs -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "JobPosting",
+        "title": "Offres d'emploi - Groupe Akel Services",
+        "description": "Découvrez nos opportunités professionnelles",
+        "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Groupe Akel Services",
+            "logo": "assets/images/logo.webp"
+        },
+        "jobLocation": {
+            "@type": "Place",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Lomé",
+                "addressCountry": "TG"
+            }
+        },
+        "datePosted": "2024-01-01"
+    }
+    </script>
+
+    <title>Recrutement - Groupe Akel Services</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS Locaux -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-sticky navbar-dark" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.webp" alt="Groupe Akel Services" class="logo-nav">
+                <span>AKEL SERVICES</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formations.html">Formations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="recrutement.html">Recrutement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Subpage -->
+    <section class="hero-section-subpage fade-in-on-scroll">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center text-white">
+            <h1 class="display-3 fw-800 animate-fade-in">Rejoignez l'équipe</h1>
+            <p class="lead animate-fade-in-delay-1">Des opportunités passionnantes vous attendent chez Groupe Akel
+                Services</p>
+            <a href="#offres" class="btn btn-warning btn-rounded btn-lg animate-fade-in-delay-2">
+                <i class="fas fa-briefcase me-2"></i> Voir les offres
+            </a>
+        </div>
+    </section>
+
+    <!-- Offres d'emploi -->
+    <section id="offres" class="content-section fade-in-on-scroll">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title display-4 fw-800">Nos offres d'emploi</h2>
+                    <p class="lead text-muted mt-3">Sélectionnez un poste et postulez directement</p>
+                </div>
+            </div>
+
+            <!-- Filtres -->
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="d-flex gap-2 flex-wrap">
+                        <label class="form-label">Département :</label>
+                        <div class="btn-group" role="group">
+                            <input type="radio" class="btn-check" name="filterDept" value="all" id="allDept" checked>
+                            <label class="btn btn-outline-secondary" for="allDept">Tous</label>
+                            <input type="radio" class="btn-check" name="filterDept" value="tech" id="tech">
+                            <label class="btn btn-outline-secondary" for="tech">Tech</label>
+                            <input type="radio" class="btn-check" name="filterDept" value="commercial" id="commercial">
+                            <label class="btn btn-outline-secondary" for="commercial">Commercial</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex gap-2 flex-wrap">
+                        <label class="form-label">Niveau :</label>
+                        <div class="btn-group" role="group">
+                            <input type="radio" class="btn-check" name="filterLevel" value="all" id="allLevel" checked>
+                            <label class="btn btn-outline-secondary" for="allLevel">Tous</label>
+                            <input type="radio" class="btn-check" name="filterLevel" value="junior" id="junior">
+                            <label class="btn btn-outline-secondary" for="junior">Junior</label>
+                            <input type="radio" class="btn-check" name="filterLevel" value="senior" id="senior">
+                            <label class="btn btn-outline-secondary" for="senior">Senior</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cartes Jobs -->
+            <div class="row g-4" id="jobsContainer">
+                <div class="col-lg-4 col-md-6 job-card fade-in-on-scroll" data-category="tech" data-level="junior">
+                    <div class="card-pole h-100">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4 class="card-title">Développeur Web Junior</h4>
+                        <p class="card-text">Développez des sites modernes avec HTML/CSS/JS et frameworks. CDI Lomé.</p>
+                        <button class="btn btn-warning w-100"
+                            onclick="setPoste('Développeur Web Junior'); new bootstrap.Modal(document.getElementById('candidatureModal')).show()">
+                            Postuler
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 job-card fade-in-on-scroll" data-category="commercial"
+                    data-level="senior">
+                    <div class="card-pole h-100">
+                        <div class="card-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4 class="card-title">Commercial Senior</h4>
+                        <p class="card-text">Prospection clients B2B, gestion relation client. Salaire attractif +
+                            commissions.</p>
+                        <button class="btn btn-warning w-100"
+                            onclick="setPoste('Commercial Senior'); new bootstrap.Modal(document.getElementById('candidatureModal')).show()">
+                            Postuler
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 job-card fade-in-on-scroll" data-category="tech" data-level="senior">
+                    <div class="card-pole h-100">
+                        <div class="card-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h4 class="card-title">Responsable RH</h4>
+                        <p class="card-text">Gestion RH, recrutements, formation. Exp 5+ ans exigée.</p>
+                        <button class="btn btn-warning w-100"
+                            onclick="setPoste('Responsable RH'); new bootstrap.Modal(document.getElementById('candidatureModal')).show()">
+                            Postuler
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 job-card fade-in-on-scroll" data-category="commercial"
+                    data-level="junior">
+                    <div class="card-pole h-100">
+                        <div class="card-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4 class="card-title">Comptable</h4>
+                        <p class="card-text">Comptabilité générale, déclarations fiscales. CDD 6 mois renouvelable.</p>
+                        <button class="btn btn-warning w-100"
+                            onclick="setPoste('Comptable'); new bootstrap.Modal(document.getElementById('candidatureModal')).show()">
+                            Postuler
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 job-card fade-in-on-scroll" data-category="tech" data-level="junior">
+                    <div class="card-pole h-100">
+                        <div class="card-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h4 class="card-title">Stage Marketing Digital</h4>
+                        <p class="card-text">6 mois rémunéré. SEO, réseaux sociaux, campagnes ads.</p>
+                        <button class="btn btn-warning w-100"
+                            onclick="setPoste('Stage Marketing Digital'); new bootstrap.Modal(document.getElementById('candidatureModal')).show()">
+                            Postuler
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 job-card fade-in-on-scroll" data-category="commercial"
+                    data-level="junior">
+                    <div class="card-pole h-100">
+                        <div class="card-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h4 class="card-title">Chauffeur Livreur</h4>
+                        <p class="card-text">Permis B, bonne connaissance Lomé. CDI temps plein.</p>
+                        <button class="btn btn-warning w-100"
+                            onclick="setPoste('Chauffeur Livreur'); new bootstrap.Modal(document.getElementById('candidatureModal')).show()">
+                            Postuler
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Recrutement -->
+    <section class="content-section bg-light fade-in-on-scroll">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title display-4 fw-800">Notre process de recrutement</h2>
+                    <p class="lead text-muted mt-3">4 étapes simples pour rejoindre notre équipe</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card text-center h-100">
+                        <div class="step-number">1</div>
+                        <h5 class="fw-800 mb-3">Candidature</h5>
+                        <p>Envoyez votre CV via notre formulaire</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card text-center h-100">
+                        <div class="step-number">2</div>
+                        <h5 class="fw-800 mb-3">Pré-sélection</h5>
+                        <p>Analyse de votre profil (24-48h)</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card text-center h-100">
+                        <div class="step-number">3</div>
+                        <h5 class="fw-800 mb-3">Entretiens</h5>
+                        <p>RDV technique + RH (1 semaine)</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card text-center h-100">
+                        <div class="step-number">4</div>
+                        <h5 class="fw-800 mb-3">Intégration</h5>
+                        <p>Signature contrat + onboarding</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-section fade-in-on-scroll">
+        <div class="container">
+            <div class="row text-center text-white">
+                <div class="col-md-3 col-sm-6 stat-item">
+                    <h3 class="display-5" data-animated="false">200+</h3>
+                    <p class="lead">Candidats reçus</p>
+                </div>
+                <div class="col-md-3 col-sm-6 stat-item">
+                    <h3 class="display-5" data-animated="false">50+</h3>
+                    <p class="lead">Recrutements/an</p>
+                </div>
+                <div class="col-md-3 col-sm-6 stat-item">
+                    <h3 class="display-5" data-animated="false">95%</h3>
+                    <p class="lead">Satisfaction</p>
+                </div>
+                <div class="col-md-3 col-sm-6 stat-item">
+                    <h3 class="display-5" data-animated="false">7</h3>
+                    <p class="lead">Jours moyen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire Candidature -->
+    <section id="formulaireCandidature" class="content-section fade-in-on-scroll">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form-card p-5">
+                        <h2 class="text-center mb-4 fw-800">Postulez dès maintenant</h2>
+                        <p class="text-center text-muted mb-5">Ou candidature spontanée</p>
+
+                        <form id="formulaireCandidat" enctype="multipart/form-data">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label">Nom Complet *</label>
+                                    <input type="text" class="form-control form-control-lg" name="nom" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email *</label>
+                                    <input type="email" class="form-control form-control-lg" name="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Téléphone *</label>
+                                    <input type="tel" class="form-control form-control-lg" name="telephone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Poste souhaité</label>
+                                    <select class="form-select form-select-lg" name="poste" id="poste">
+                                        <option value="">Choisir un poste</option>
+                                        <option value="Développeur Web Junior">Développeur Web Junior</option>
+                                        <option value="Commercial Senior">Commercial Senior</option>
+                                        <option value="Responsable RH">Responsable RH</option>
+                                        <option value="Comptable">Comptable</option>
+                                        <option value="Stage Marketing Digital">Stage Marketing Digital</option>
+                                        <option value="Chauffeur Livreur">Chauffeur Livreur</option>
+                                        <option value="Spontanée">Candidature spontanée</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">CV (PDF/DOC max 5MB) *</label>
+                                    <input type="file" class="form-control form-control-lg" name="cv"
+                                        accept=".pdf,.doc,.docx" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" name="message" rows="4"
+                                        placeholder="Présentez-vous et expliquez votre motivation..."></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-warning btn-rounded btn-lg px-5">
+                                        <i class="fas fa-paper-plane me-2"></i>Envoyer ma candidature
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section class="testimonials-section fade-in-on-scroll">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="section-title display-4 fw-800">Ce que disent nos collaborateurs</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="testimonial-card h-100">
+                        <div class="stars text-warning mb-3">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="italic">"Excellente ambiance d'équipe et formation continue. Recommandé!"</p>
+                        <h6 class="fw-800 mt-3">Marie K., Développeuse</h6>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card h-100">
+                        <div class="stars text-warning mb-3">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="italic">"Opportunités d'évolution rapide. Salaire compétitif."</p>
+                        <h6 class="fw-800 mt-3">Koffi A., Commercial</h6>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card h-100">
+                        <div class="stars text-warning mb-3">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="italic">"Process recrutement transparent et rapide."</p>
+                        <h6 class="fw-800 mt-3">Aminata D., RH</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-section text-center text-white fade-in-on-scroll">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4 fw-800 mb-4">Prêt à booster votre carrière ?</h2>
+                    <p class="lead mb-4">Contactez-nous directement ou via WhatsApp</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                        <a href="https://wa.me/22898063351?text=Bonjour, je postule pour un poste chez Akel Services"
+                            class="btn btn-success btn-rounded btn-lg">
+                            <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                        </a>
+                        <a href="mailto:contact@akelservices.tg?subject=Candidature%20Akel%20Services"
+                            class="btn btn-outline-light btn-rounded btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Envoyer Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Candidature -->
+    <div class="modal fade" id="candidatureModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-800">Postuler</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted mb-4">Ouverture directe du formulaire candidature.</p>
+                    <div class="text-center">
+                        <a href="#formulaireCandidature" class="btn btn-warning btn-lg">Aller au formulaire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (standard) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>Groupe Akel Services</h5>
+                    <p>Services innovants et formations professionnelles à Lomé, Togo.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/22898063351" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="digital.html">Digital</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                        <li><a href="education.html">Éducation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Pages</h5>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="recrutement.html">Recrutement</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact</h5>
+                    <div class="opening-hours">
+                        <div class="hour-item">
+                            <span class="day">Lun-Ven</span>
+                            <span class="time">8h-18h</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day">Sam</span>
+                            <span class="time">9h-14h</span>
+                        </div>
+                    </div>
+                    <p class="mt-3"><i class="fas fa-phone me-2"></i>+228 98 06 33 51</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Groupe Akel Services. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#privacy" class="me-3">Confidentialité</a>
+                    <a href="#terms">Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/22898063351?text=Bonjour%20Akel%20Services,%20je%20suis%20intéressé(e)%20par%20le%20recrutement"
+        class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Local -->
+    <script src="js/script.js"></script>
+
+    <!-- JS Supplémentaire pour Recrutement -->
+    <script>
+        // Filtres jobs
+        document.querySelectorAll('input[name="filterDept"], input[name="filterLevel"]').forEach(filter => {
+            filter.addEventListener('change', function () {
+                const dept = document.querySelector('input[name="filterDept"]:checked')?.value || 'all';
+                const level = document.querySelector('input[name="filterLevel"]:checked')?.value || 'all';
+                const cards = document.querySelectorAll('.job-card');
+
+                cards.forEach(card => {
+                    const cardDept = card.dataset.category;
+                    const cardLevel = card.dataset.level;
+
+                    if ((dept === 'all' || cardDept === dept) && (level === 'all' || cardLevel === level)) {
+                        card.style.display = 'block';
+                        card.classList.add('fade-in-on-scroll');
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Validation CV
+        document.getElementById('formulaireCandidat').addEventListener('submit', function (e) {
+            const cvFile = this.querySelector('input[name="cv"]').files[0];
+            if (cvFile && cvFile.size > 5 * 1024 * 1024) {
+                e.preventDefault();
+                alert('CV trop volumineux (max 5MB)');
+                return false;
+            }
+        });
+    </script>
+</body>
+
+</html>

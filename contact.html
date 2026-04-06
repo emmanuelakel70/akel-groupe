@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Groupe Akel Services - Vos questions, nos réponses.">
+    <title>Contact - Groupe Akel Services</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-sticky" id="navbar">
+        <div class="container-fluid px-3 px-md-5">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.webp" alt="Akel Services Logo" class="logo-nav me-2" style="height: 40px;">
+                <span>AKEL</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="digital.html">Akel Digital</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Akel Académie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hygiene.html">Akel Bio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formations.html">Formations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero-section-subpage d-flex align-items-center justify-content-center text-center text-white">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content position-relative z-3">
+            <h1 class="display-3 fw-800 mb-3">Nous Contacter</h1>
+            <p class="lead">Nous sommes là pour vous écouter et répondre à vos questions</p>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="content-section py-5">
+        <div class="container px-3 px-md-5">
+            <div class="row g-4 mb-5">
+                <!-- Informations de Contact -->
+                <div class="col-md-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5 class="fw-700">Adresse</h5>
+                        <p class="text-muted">
+                            Lomé, Togo<br>
+                            Région Maritime
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h5 class="fw-700">Téléphone</h5>
+                        <p class="text-muted">
+                            <a href="tel:+22898063351" class="text-muted text-decoration-none fw-600">+228 98 06 33 51</a><br>
+                            Lun-Ven: 8h-18h
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h5 class="fw-700">Email</h5>
+                        <p class="text-muted">
+                            <a href="mailto:contact@akelservices.tg" class="text-muted text-decoration-none fw-600">contact@akelservices.tg</a><br>
+                            Réponse: 24h
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORMULAIRE DE CONTACT -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-card p-5">
+                        <h3 class="fw-800 mb-4">Envoyez-nous un Message</h3>
+                        <form id="contactForm" method="POST" action="backend/send-contact.php">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="nom" class="form-label fw-600">Votre Nom <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control form-control-lg" id="nom" name="nom" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label fw-600">Votre Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control form-control-lg" id="email" name="email" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telephone" class="form-label fw-600">Téléphone</label>
+                                <input type="tel" class="form-control form-control-lg" id="telephone" name="telephone" placeholder="+228 XX XX XX XX">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="sujet" class="form-label fw-600">Sujet <span class="text-danger">*</span></label>
+                                <select class="form-select form-select-lg" id="sujet" name="sujet" required>
+                                    <option value="">-- Sélectionnez un sujet --</option>
+                                    <option value="general">Question générale</option>
+                                    <option value="formations">Formations</option>
+                                    <option value="produits">Produits Akel Bio</option>
+                                    <option value="partenariat">Partenariat</option>
+                                    <option value="recrutement">Recrutement</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-600">Message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" name="message" rows="6" required placeholder="Votre message..."></textarea>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="conditions" name="conditions" required>
+                                <label class="form-check-label" for="conditions">
+                                    J'accepte la politique de confidentialité
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-warning btn-lg btn-rounded w-100 fw-600">
+                                <i class="fas fa-paper-plane"></i> Envoyer le Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CARTE & HORAIRES ============ -->
+    <section class="py-5 bg-light">
+        <div class="container px-3 px-md-5">
+            <div class="row g-4">
+                <!-- Carte -->
+                <div class="col-md-6">
+                    <h4 class="fw-800 mb-4">Localisation</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.1234567890!2d1.2321!3d6.1256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMDcnMzAuMiJOIDHCsDEzJzUzLjYiRQ!5e0!3m2!1sfr!2stg!4v1234567890" width="100%" height="350" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- Horaires d'Ouverture -->
+                <div class="col-md-6">
+                    <h4 class="fw-800 mb-4">Horaires d'Ouverture</h4>
+                    <div class="opening-hours">
+                        <div class="hour-item">
+                            <span class="day fw-600">Lundi</span>
+                            <span class="time">8:00 - 18:00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day fw-600">Mardi</span>
+                            <span class="time">8:00 - 18:00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day fw-600">Mercredi</span>
+                            <span class="time">8:00 - 18:00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day fw-600">Jeudi</span>
+                            <span class="time">8:00 - 18:00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span class="day fw-600">Vendredi</span>
+                            <span class="time">8:00 - 18:00</span>
+                        </div>
+                        <div class="hour-item border-0">
+                            <span class="day fw-600">Samedi</span>
+                            <span class="time">9:00 - 14:00</span>
+                        </div>
+                        <div class="hour-item border-0">
+                            <span class="day fw-600">Dimanche</span>
+                            <span class="time text-danger">Fermé</span>
+                        </div>
+                    </div>
+
+                    <!-- Boutons Rapides -->
+                    <div class="mt-4 d-flex gap-2">
+                        <a href="https://wa.me/22898063351" class="btn btn-success btn-rounded flex-grow-1" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="tel:+22898063351" class="btn btn-info btn-rounded flex-grow-1">
+                            <i class="fas fa-phone"></i> Appeler
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="py-5">
+        <div class="container px-3 px-md-5">
+            <div class="text-center mb-5">
+                <h3 class="fw-800 section-title">Questions Fréquentes</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Comment m'inscrire à une formation?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Rendez-vous sur notre page Formations, choisissez la formation qui vous intéresse et cliquez sur "S'inscrire". Vous serez mis en contact avec notre équipe via WhatsApp.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Quels sont les modes de paiement?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nous acceptons les virements bancaires, les paiements en ligne, et les transferts d'argent via des services comme Orange Money ou MTN Money.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Offrez-vous une garantie de satisfaction?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui! Si vous n'êtes pas satisfait, nous offrons une garantie de remboursement de 100% dans les 7 premiers jours.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Les formations sont-elles en ligne ou en présentiel?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nous proposons les deux! Formations en ligne avec flexibilité ou en présentiel à Lomé. Contactez-nous pour connaître les disponibilités.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Comment puis-je commander les produits Akel Bio?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Visitez la page Akel Bio, sélectionnez les produits et cliquez sur "Commander". Vous serez redirigé vers WhatsApp pour finaliser votre commande.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer py-5">
+        <div class="container px-3 px-md-5">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning fw-700 mb-3">Groupe Akel Services</h5>
+                    <p class="text-muted">L'excellence qui transforme votre quotidien</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning fw-700 mb-3">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Accueil</a></li>
+                        <li><a href="formations.html" class="text-muted text-decoration-none">Formations</a></li>
+                        <li><a href="blog.html" class="text-muted text-decoration-none">Blog</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning fw-700 mb-3">Contact</h5>
+                    <p class="text-muted">
+                        <i class="fas fa-phone text-warning"></i> 
+                        <a href="tel:+22898063351" class="text-muted text-decoration-none">+228 98 06 33 51</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-muted">
+                <p>&copy; 2026 Groupe Akel Services. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ BOUTON WHATSAPP FLOTTANT ============ -->
+    <a href="https://wa.me/22898063351" class="whatsapp-float" target="_blank" title="Contactez-nous via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Formulaire de Contact
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            try {
+                const response = await fetch('backend/send-contact.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    alert('✅ Message envoyé avec succès!\n\nNous vous recontacterons dans les 24h.');
+                    this.reset();
+                } else {
+                    alert('❌ Erreur: ' + result.message);
+                }
+            } catch (error) {
+                alert('❌ Erreur d\'envoi. Veuillez réessayer.');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog - Groupe Akel Services. Articles, conseils et actualités.">
+    <title>Blog - Groupe Akel Services</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-sticky" id="navbar">
+        <div class="container-fluid px-3 px-md-5">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.webp" alt="Akel Services Logo" class="logo-nav me-2" style="height: 40px;">
+                <span>AKEL</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="digital.html">Akel Digital</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Akel Académie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hygiene.html">Akel Bio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formations.html">Formations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recrutement.html">Recrutement</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero-section-subpage d-flex align-items-center justify-content-center text-center text-white">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content position-relative z-3">
+            <h1 class="display-3 fw-800 mb-3">Notre Blog</h1>
+            <p class="lead">Conseils, actualités et astuces pour réussir</p>
+        </div>
+    </section>
+
+    <!-- ============ BLOG SECTION ============ -->
+    <section class="content-section py-5">
+        <div class="container px-3 px-md-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-800 mb-3 section-title">Articles Récents</h2>
+                <p class="text-muted lead">Restez informé de nos actualités et conseils experts</p>
+            </div>
+
+            <!-- BARRE DE RECHERCHE -->
+            <div class="mb-5">
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" id="searchBlog" placeholder="Rechercher un article...">
+                    <button class="btn btn-warning" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ARTICLES GRID -->
+            <div class="row g-4">
+                <!-- Article 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop" alt="Web Design Trends 2026" loading="lazy">
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-3">Digital</span>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date"><i class="fas fa-calendar"></i> 15 Avril 2026</span>
+                            <h5 class="blog-title">Tendances Web Design 2026</h5>
+                            <p class="blog-excerpt">Découvrez les tendances dominantes du web design cette année : minimalisme, dark mode, animations fluides...</p>
+                            <a href="#" class="read-more">Lire l'article <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1642832177817-a5c71ed4f53a?w=400&h=250&fit=crop" alt="Guide Trading" loading="lazy">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3">Trading</span>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date"><i class="fas fa-calendar"></i> 12 Avril 2026</span>
+                            <h5 class="blog-title">Guide Complet du Trading Forex</h5>
+                            <p class="blog-excerpt">Apprenez les bases du trading Forex : paires de devises, heures de trading, gestion des risques...</p>
+                            <a href="#" class="read-more">Lire l'article <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1596523014707-c81758ed7ee0?w=400&h=250&fit=crop" alt="Préparation Examens" loading="lazy">
+                            <span class="badge bg-info position-absolute top-0 start-0 m-3">Académie</span>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date"><i class="fas fa-calendar"></i> 10 Avril 2026</span>
+                            <h5 class="blog-title">Comment Bien Se Préparer aux Examens</h5>
+                            <p class="blog-excerpt">Conseils et techniques pour optimiser votre préparation : planification, révision efficace, gestion du stress...</p>
+                            <a href="#" class="read-more">Lire l'article <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1600857062241-98e5dba7214f?w=400&h=250&fit=crop" alt="Soins Naturels" loading="lazy">
+                            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">Bien-être</span>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date"><i class="fas fa-calendar"></i> 8 Avril 2026</span>
+                            <h5 class="blog-title">Les Bienfaits des Produits Naturels</h5>
+                            <p class="blog-excerpt">Pourquoi choisir les produits naturels ? Avantages pour la santé, durabilité, et impact environnemental...</p>
+                            <a href="#" class="read-more">Lire l'article <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=400&h=250&fit=crop" alt="E-Commerce Success" loading="lazy">
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-3">Digital</span>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date"><i class="fas fa-calendar"></i> 5 Avril 2026</span>
+                            <h5 class="blog-title">E-Commerce: 10 Secrets pour Réussir</h5>
+                            <p class="blog-excerpt">Stratégies éprouvées pour augmenter vos ventes en ligne : SEO, email marketing, conversion rate optimization...</p>
+                            <a href="#" class="read-more">Lire l'article <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Article 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop" alt="Entrepreneurship" loading="lazy">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3">Entrepreneuriat</span>
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-date"><i class="fas fa-calendar"></i> 2 Avril 2026</span>
+                            <h5 class="blog-title">Lancer Votre Startup en 6 Étapes</h5>
+                            <p class="blog-excerpt">Tout ce qu'il faut savoir pour transformer votre idée en entreprise prospère : planning, financement, marketing...</p>
+                            <a href="#" class="read-more">Lire l'article <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- PAGINATION -->
+            <nav aria-label="Page navigation" class="d-flex justify-content-center mt-5">
+                <ul class="pagination">
+                    <li class="page-item disabled"><a class="page-link" href="#">Précédent</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Suivant</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="py-5 bg-light">
+        <div class="container px-3 px-md-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h3 class="fw-800">Restez Informé</h3>
+                    <p class="text-muted">Abonnez-vous à notre newsletter et recevez nos articles en avant-première</p>
+                </div>
+                <div class="col-md-6">
+                    <form id="newsletterForm" class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Votre email..." required>
+                        <button type="submit" class="btn btn-warning btn-rounded px-4">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer py-5">
+        <div class="container px-3 px-md-5">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning fw-700 mb-3">Groupe Akel Services</h5>
+                    <p class="text-muted">L'excellence qui transforme votre quotidien</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning fw-700 mb-3">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Accueil</a></li>
+                        <li><a href="formations.html" class="text-muted text-decoration-none">Formations</a></li>
+                        <li><a href="blog.html" class="text-muted text-decoration-none">Blog</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning fw-700 mb-3">Contact</h5>
+                    <p class="text-muted">
+                        <i class="fas fa-phone text-warning"></i> 
+                        <a href="tel:+22898063351" class="text-muted text-decoration-none">+228 98 06 33 51</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-muted">
+                <p>&copy; 2026 Groupe Akel Services. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ BOUTON WHATSAPP FLOTTANT ============ -->
+    <a href="https://wa.me/22898063351" class="whatsapp-float" target="_blank" title="Contactez-nous via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Newsletter
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Merci pour votre abonnement! Vérifiez votre email.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

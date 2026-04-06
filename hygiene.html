@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akel Bio - Produits d'hygiène naturels et premium.">
+    <title>Akel Bio - Groupe Akel Services</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-sticky" id="navbar">
+        <div class="container-fluid px-3 px-md-5">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.webp" alt="Akel Services Logo" class="logo-nav me-2" style="height: 40px;">
+                <span>AKEL</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="digital.html">Akel Digital</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Akel Académie</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="hygiene.html">Akel Bio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recrutement.html">Recrutement</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero-section-subpage d-flex align-items-center justify-content-center text-center text-white">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content position-relative z-3">
+            <h1 class="display-3 fw-800 mb-3">Akel Bio</h1>
+            <p class="lead">Hygiène naturelle et bien-être premium</p>
+        </div>
+    </section>
+
+    <!-- ============ INTRODUCTION ============ -->
+    <section class="content-section py-5">
+        <div class="container px-3 px-md-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-800 mb-3 section-title">Nos Produits Premium d'Hygiène</h2>
+                <p class="text-muted lead">Formulés naturellement pour votre bien-être quotidien</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CATALOGUE PRODUITS - GRILLE BOOTSTRAP ============ -->
+    <section class="products-section py-5 bg-light">
+        <div class="container px-3 px-md-5">
+            <!-- Savons Liquides -->
+            <h3 class="fw-800 mb-4">
+                <i class="fas fa-droplet text-warning"></i> Savons Liquides Naturels
+            </h3>
+            <div class="row g-4 mb-5">
+                <!-- Produit 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/savon_aloe.webp" alt="Savon Aloe Vera" class="img-fluid" loading="lazy">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3">100% Naturel</span>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-title">Savon Liquide Aloe Vera</h5>
+                            <p class="text-muted small">Hydratant et apaisant pour les peaux sensibles</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">1,500 FCFA</span>
+                                <button class="btn btn-sm btn-warning btn-rounded" onclick="ajouterAuPanier('Savon Aloe Vera')">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/savon_miel.webp" alt="Savon Miel & Propolis" class="img-fluid" loading="lazy">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3">100% Naturel</span>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-title">Savon Liquide Miel & Propolis</h5>
+                            <p class="text-muted small">Antibactérien naturel et revitalisant</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">1,500 FCFA</span>
+                                <button class="btn btn-sm btn-warning btn-rounded" onclick="ajouterAuPanier('Savon Miel & Propolis')">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/savon.webp" alt="Savon Charbon Actif" class="img-fluid" loading="lazy">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3">100% Naturel</span>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-title">Savon Liquide Charbon Actif</h5>
+                            <p class="text-muted small">Purifiant et détoxifiant pour la peau et vos linges</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">1,000 FCFA</span>
+                                <button class="btn btn-sm btn-warning btn-rounded" onclick="ajouterAuPanier('Savon Charbon Actif')">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <!-- Pommades -->
+            <h3 class="fw-800 mb-4">
+                <i class="fas fa-jar text-warning"></i> Pommades Thérapeutiques
+            </h3>
+            <div class="row g-4">
+                <!-- Produit 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/pommade cutané.webp" alt="Pommade Cica-Skin" class="img-fluid" loading="lazy">
+                            <span class="badge bg-info position-absolute top-0 start-0 m-3">Cicatrisante</span>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-title">Pommade Cica-Skin</h5>
+                            <p class="text-muted small">Cicatrisante et régénérante pour plaies</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">1,500 FCFA</span>
+                                <button class="btn btn-sm btn-warning btn-rounded" onclick="ajouterAuPanier('Pommade Cica-Skin')">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/baume_muscle.webp" alt="Pommade Arnica" class="img-fluid" loading="lazy">
+                            <span class="badge bg-info position-absolute top-0 start-0 m-3">Anti-Inflammatoire</span>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-title">Pommade Arnica & Curcuma</h5>
+                            <p class="text-muted small">Anti-inflammatoire pour douleurs musculaires</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price">1,000 FCFA</span>
+                                <button class="btn btn-sm btn-warning btn-rounded" onclick="ajouterAuPanier('Pommade Arnica & Curcuma')">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/images/pommade cheveu.webp" alt="Pommade Karité" class="img-fluid" loading="lazy">
+                            <span class="badge bg-info position-absolute top-0 start-0 m-3">Nourrissante</span>
+                        </div>
+                        <div class="product-details">
+                            <h5 class="product-title">Pommade Avocadro-Akel</h5>
+                            <p class="text-muted small">Nourrissante pour Cheveux</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="product-price"> 1,000 FCFA</span>
+                                <button class="btn btn-sm btn-warning btn-rounded" onclick="ajouterAuPanier('Pommade Beurre de Karité')">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA SECTION ============ -->
+    <section class="cta-section py-5 text-white text-center">
+        <div class="container px-3 px-md-5">
+            <h2 class="fw-800 mb-4">Vos produits favoris à portée de main</h2>
+            <a href="https://wa.me/22898063351" class="btn btn-warning btn-lg btn-rounded" target="_blank">
+                <i class="fab fa-whatsapp"></i> Commander Maintenant
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer py-5">
+        <div class="container px-3 px-md-5">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning fw-700 mb-3">Groupe Akel Services</h5>
+                    <p class="text-muted">L'excellence qui transforme votre quotidien</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning fw-700 mb-3">Nos Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="digital.html" class="text-muted text-decoration-none">Akel Digital</a></li>
+                        <li><a href="education.html" class="text-muted text-decoration-none">Akel Académie</a></li>
+                        <li><a href="hygiene.html" class="text-muted text-decoration-none">Akel Bio</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-warning fw-700 mb-3">Contact</h5>
+                    <p class="text-muted">
+                        <i class="fas fa-phone text-warning"></i> 
+                        <a href="tel:+22898063351" class="text-muted text-decoration-none">+228 98 06 33 51</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-muted">
+                <p>&copy; 2026 Groupe Akel Services. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ BOUTON WHATSAPP FLOTTANT ============ -->
+    <a href="https://wa.me/22898063351" class="whatsapp-float" target="_blank" title="Contactez-nous via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        function ajouterAuPanier(produit) {
+            alert('✅ ' + produit + ' ajouté!\n\nContactez-nous via WhatsApp pour finaliser votre commande.');
+        }
+    </script>
+</body>
+</html>
